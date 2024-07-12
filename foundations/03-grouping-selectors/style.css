@@ -1,0 +1,16 @@
+/* styles.css */
+
+button {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+
+.do {
+    color: white;
+    background-color: black;
+}
+
+.dont {
+    color: black;
+    background-color: yellow;
+}
