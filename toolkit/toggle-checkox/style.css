@@ -1,0 +1,59 @@
+/* Custom CSS */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(199, 199, 180);
+}
+
+
+/* background of toggle */
+
+label {
+    min-width: 500px;
+    height: 200px;
+    position: relative;
+    display: block;
+    background-color: rgb(182, 182, 182);
+    border: solid 2px  rgb(255, 228, 196);
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+/* fake button */
+
+label:after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: rgb(255, 228, 196);
+}
+
+/* hide checkbox */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* change toggle background color when input is checked */
+
+input:checked + label {
+    background: rgb(255, 120, 120);
+}
+
+/* change fake button position when input is checked */
+
+input:checked + label:after {
+    left: 490px;
+    transform: translateX(-100%);
+}
+
+label, label:after {
+    transition: 0.3s;
+}
